@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;;
+    font-size: 12px;
+    background-color: hsl(0, 0%, 95%);
+    max-width: 1440px;
+}
+
+hgroup {
+    background: linear-gradient(to left, grey, navy);
+    height: 100px;
+    max-width: 1450px
+}
+
+header {
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+hgroup ul {
+    display: flex;
+    list-style-type: none;
+}
+
+hgroup a {
+    padding: 10px;
+    margin: 0 5px;
+    color: hsl(0, 0%, 95%);;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+hgroup a:hover {
+    border-bottom: 2px solid gold;
+}
+
+.current {
+    font-weight: bolder;
+}
+
+hgroup h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 30px;
+    color:hsl(0, 0%, 95%);;
+    animation: 8s ease-in-out 6s infinite running mySlide;
+}
+
+@keyframes mySlide {
+    from {
+        margin-left: 25%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+span {
+    color: gold;
+}
+
+.carrier {
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px;
+    width: 750px;
+    height: 600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: left;
+}
+
+.first, .second, .third {
+    width: 250px;
+    height: 400px;
+    padding: 20px;
+    margin: auto 0;
+}
+
+button {
+    border: 1px solid hsl(0, 0%, 95%);
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.first button:active {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.second button:active {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.third button:active {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+img {
+    margin-top: 10px;
+    width: 60px;
+}
+
+.cars {
+    font-family: 'Lexend Deca',
+        sans-serif;
+    margin: 10px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    align-items: left;
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+.cars h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    line-height: 2;
+    font-size: 30px;
+}
+
+.first {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.second {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.third {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.first button{
+    color: hsl(31, 77%, 52%);
+}
+
+.second button{
+    color: hsl(184, 100%, 22%);
+}
+
+.third button{
+    color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 480px){
+    .carrier {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        background-color: rgb(19, 19, 34);
+        height: fit-content;
+    }
+
+    .first, .second, .third {
+        margin: 0;
+        width: 100%;
+        font-size: large;
+        align-items: center;
+    }
+
+    hgroup h1 {
+        animation: none;
+        font-size: 20px;
+    }
+
+}
